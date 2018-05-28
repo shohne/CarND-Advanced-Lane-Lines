@@ -1,11 +1,11 @@
 ## Advanced Lane Finding
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
-This repo contains the code written to complete the project **Advanced Lane Finding** on Udacity Self-Driving Car Nanodegree. The goal is detect lane lines from images (and video) taken from a camera at the from of a car.
+This repo contains the written code to complete the project **Advanced Lane Finding** on Udacity Self-Driving Car Nanodegree. The goal is to detect lane lines from images (and video) taken from a camera at the front of a car.
 
 Prerequisites
 ---
-To run this project, you need [Anaconda 4.3.30](https://anaconda.org/conda-canary/conda/files?version=4.3.30) installed.
+To run this project, it is necessary to have [Anaconda 4.3.30](https://anaconda.org/conda-canary/conda/files?version=4.3.30) installed.
 
 Installation
 ---
@@ -21,7 +21,7 @@ Create a conda environment with all dependencies:
 ```
 conda env create -f environment.yml
 ```
-The name of created environment is *lane-advanced*.
+The name of the created environment is *lane-advanced*.
 
 Running the Notebook
 ---
@@ -39,12 +39,12 @@ Please visit the [report.md](report.md) for more information about the algorithm
 
 Ouput and List of Files
 ---
-As an example of produced video running the iPython Notebook:
+As an example of the produced video running the iPython Notebook:
 
 [project_video.mp4](output/project_video.mp4)
 
-Some usefull files and folders in this project:
+Some useful files and folders in this project:
 
 - **P4.ipynb** iPython Notebook with the implementation;
-- **environment.yaml** used to create conda environment;
+- **environment.yml** used to create conda environment;
 - **report.md** detailed description of pipeline;

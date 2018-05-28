@@ -5,21 +5,21 @@ The goals / steps of this project are the following:
 
 ### Pipeline Overview
 
-Before process each image, it is necessary to calibrate the camera to corrected from distortions. This happens in getCalibrationParameters method where we get parameters to adjustes every image processed in pipeline.
+Before processing each image, it is necessary to calibrate the camera to correct from distortions. This happens in **getCalibrationParameters** method where it is possibleto get parameters to adjust every image processed in the pipeline.
 
-Each image or video frame is processed in **pipeline** method that follow the steps:
+Each image or video frame is processed in **pipeline** method that following the steps:
 
 1. Undistort the image (with calibration parameters);
 2. Apply birds eye viewer (method **warp**) where points (700,445) - (1280,720) - (0,720) - (580-445) are mapped to rectangule (1280, 0) -(1280, 720) - (0, 720) - (0,0);
-3. Converting image to HLS colorspace;
+3. Convert image to HLS colorspace;
 4. Consider only S channel in image;
 5. Apply Sobel transformation in X direction to get only vertical lines in image;
 6. Apply threshold to image;
-7. Run methd findmaskline (provided by Udacity) to isolate lane pixels;
-8. Adjusts a second order function to trace left lane (polynomial fit) and find its coefficients;
-9. Adjusts a second order function to trace right lane;
+7. Run method findmaskline (provided by Udacity) to isolate lane pixels;
+8. Adjust a second order function to trace left lane (polynomial fit) and find its coefficients;
+9. Adjust a second order function to trace right lane;
 10. Update coefficients history (with last 20 values);
-11. Verify if values to left and right lane are compatible with previous values;
+11. Verify if values on left and right lanes are compatible with previous values;
 12. Calculate new value for coefficients (as a mean over historical values);
 13. Find **curvature** (method **calculate_curvature**) and position in lane (method calculate_center_dist).
 14. Draw green region to indicate detected lane area;
