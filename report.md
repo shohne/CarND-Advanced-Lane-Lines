@@ -50,11 +50,11 @@ Following pipeline steps, We obtain:
 
 ![](output/straight_lines1_F.jpg)
 
-### video
+### Video
 There is a important step in pipeline that checks if prediction values makes sense and to protect against suddenly changes calculate the mean of historical values for curvature. Only for a temporal sequence of images it is possible to see this behavior. In:
 
-![](output/project_video.mp4)
+[project_video.mp4](output/project_video.mp4)
 
 We can see the pipeline applied in video:
 
-![](project_video.mp4).
+[original project_video.mp4](project_video.mp4).
