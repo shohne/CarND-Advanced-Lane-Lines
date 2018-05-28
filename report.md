@@ -58,3 +58,6 @@ There is a important step in pipeline that checks if prediction values makes sen
 We can see the pipeline applied in video:
 
 [original project_video.mp4](project_video.mp4).
+
+### Shortcomings
+I believe that the main shortcoming it is related as specific the solution is to a certain type of road. I am almost sure that in other weather, light or road situations, this pipeline will fail. A better approch could be use **Deep Learning** that is able to adjust to different cenarios (since enough data is provided).
