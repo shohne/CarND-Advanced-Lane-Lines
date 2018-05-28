@@ -19,7 +19,7 @@ cd CarND-Advanced-Lane-Lines
 ```
 Create a conda environment with all dependencies:
 ```
-conda env create -f environment.yaml
+conda env create -f environment.yml
 ```
 The name of created environment is *lane-advanced*.
 
